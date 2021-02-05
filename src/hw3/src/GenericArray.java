@@ -8,7 +8,7 @@ public class GenericArray<T> {
     }
 
     public String showType() {
-       return ("with type T " + this.elements[0].getClass().getName());
+       return ("with type T " + elements[0].getClass().getName());
     }
 
     public void printArray(){
