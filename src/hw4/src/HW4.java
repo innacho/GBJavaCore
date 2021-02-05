@@ -24,8 +24,8 @@ public class HW4 {
         do {
             String current = setIterator.next();
             int count = 0;
-            for(int i = 0; i < wordArr.length; i++){
-                if(wordArr[i].equals(current))  count++;
+            for(String word : wordArr){
+                if(word.equals(current))  count++;
             }
             System.out.println("Word " + current + " appears in array " + count + " times.");
         }while(setIterator.hasNext());
