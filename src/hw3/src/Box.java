@@ -6,25 +6,24 @@ public class Box <T extends Fruit>{
     ArrayList<T> fruits = new ArrayList<T>();
 
     public void addToBox(T fruit) {
-        this.fruits.add(fruit);
+        fruits.add(fruit);
     }
 
     public T removeFromBox(int i) {
-        return this.fruits.remove(i);
+        return fruits.remove(i);
     }
 
     public int getBoxSize(){
-        return this.fruits.size();
+        return fruits.size();
     }
 
     public String showType() {
-        if(this.getBoxSize() > 0) return (this.fruits.get(0).getClass().getName());
-        else return "??";
-        //тут возник вопрос о том, как получить тип элементов в пустой коробке??
+        if(this.getBoxSize() > 0) return (fruits.get(0).getClass().getName());
+        else return "unknown";
     }
 
     public void printBox(){
-        System.out.println("Current box has " + this.getBoxSize() + " elements of type" + this.showType());
+        System.out.println("Current box has " + this.getBoxSize() + " elements of type " + this.showType());
     }
 
     public float getBoxWeight(){
