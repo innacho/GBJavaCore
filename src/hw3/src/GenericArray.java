@@ -13,8 +13,8 @@ public class GenericArray<T> {
 
     public void printArray(){
         System.out.print("Current array " + this.showType() +" is: ");
-        for(int i = 0; i < this.elements.length; i++ ) {
-            System.out.print(" " + this.elements[i]);
+        for (T element : elements) {
+            System.out.print(" " + element);
         }
         System.out.println();
     }

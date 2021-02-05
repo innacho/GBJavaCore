@@ -1,10 +1,10 @@
 package hw3.src;
 
-public class Fruit {
+public abstract class Fruit {
     private float weight;
 
     public float getWeight() {
-        return this.weight;
+        return weight;
     }
 }
 
