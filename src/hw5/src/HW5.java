@@ -3,6 +3,8 @@ package hw5.src;
 import java.io.*;
 import java.util.Arrays;
 
+//реализована сериализация объекта в байтовый массив
+
 public class HW5 {
     public static void main(String args[]) throws IOException {
         File file = new File("./file.csv");
@@ -25,6 +27,8 @@ public class HW5 {
         AppData appData = new AppData(header, data);
         //вывод объекта на экран
         System.out.println(appData.toString());
+
+        //вывод объекта в файл
 
         //сериализация объекта с данными
         byte[] byteAppData = null;
